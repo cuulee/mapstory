@@ -35,7 +35,10 @@ class MapStory(geonode.base.models.ResourceBase):
                     'in_map': storypin.in_map,
                     'appearance': storypin.appearance,
                     'auto_show': storypin.auto_show,
-                    'pause_playback': storypin.pause_playback
+                    'pause_playback': storypin.pause_playback,
+                    'auto_play': storypin.auto_play,
+                    'offset': storypin.offset,
+                    'play_length': storypin.play_length
                 }
                 storypin_list.append(storypin_dict)
 

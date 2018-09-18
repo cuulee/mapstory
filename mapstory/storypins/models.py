@@ -38,6 +38,10 @@ class StoryPin(models.Model):
     auto_show = models.BooleanField(default=False)
     pause_playback = models.BooleanField(default=False)
 
+    auto_play = models.BooleanField(default=False)
+    offset = models.BigIntegerField(null=True, default=0)
+    play_length = models.BigIntegerField(null=True, default=0)
+
     def _timefmt(self, val):
         return datetime.isoformat(datetime.utcfromtimestamp(val))
 
